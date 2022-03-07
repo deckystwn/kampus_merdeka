@@ -21,11 +21,11 @@ function hitung(value) {
   let angka2 = frm.a2.value;
   let operasi = value;
 
-  //jika inputan salah
+  //inputan salah
   if (isNaN(angka1) || isNaN(angka2) || angka1 == "" || angka2 == "" || !/^[0-9]+$/.test(angka1) || !/^[0-9]+$/.test(angka2)) {
     alert("harap isi data berupa angka");
   } else {
-    //jika inputan benar
+    //inputan benar
     if (operasi == "+") {
       let total = parseFloat(angka1) + parseFloat(angka2);
       frm.hasil.value = total;
@@ -35,7 +35,7 @@ function hitung(value) {
     } else if (operasi == "x") {
       let total = angka1 * angka2;
       frm.hasil.value = total;
-    } else if (operasi == "/") {
+    } else if (operasi == "÷") {
       let total = angka1 / angka2;
       frm.hasil.value = total;
     } else {
