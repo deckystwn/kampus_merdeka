@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informasi Gempa</title>
+  </head>
+  <body bgcolor="lightgray">
+    <h2>Informasi Gempa Hari Ini dari Berbagai Penjuru Dunia!!!</h2>
+    <hr />
+    <hr />
+    <script>
+      class Gempa {
+        constructor(lokasi, skala) {
+          this.lokasi = lokasi;
+          this.skala = skala;
+        }
+        dampak() {
+          let dampak;
+          if (this.skala >= 0 && this.skala <= 2) {
+            dampak = "Dampaknya tidak terasa";
+          } else if (this.skala > 2 && this.skala <= 4) {
+            dampak = "Dampaknya Bangunan Retak-Retak";
+          } else if (this.skala > 4 && this.skala <= 6) {
+            dampak = "Dampaknya Bangunan Roboh";
+          } else if (this.skala > 6) {
+            dampak = "Dampaknya Bangunan Roboh dan Berpotensi Tsunami";
+          } else {
+            dampak = "tidak ada gempa";
+          }
+          document.write(`Lokasi Gempa : ${this.lokasi}
+          <br/> Skala : ${this.skala}
+          <br/> Dampak : ${dampak} <hr>`);
+        }
+      }
+      let indonesia = new Gempa("Indonesia di kota Banten", 1);
+      let jepang = new Gempa("Jepang di Kota Tokyo", 3);
+      let rusia = new Gempa("Rusia di Kota Moscow", 5);
+      let india = new Gempa("India di Kota Mumbai", 4);
+      let palestina = new Gempa("Palestina di Kota Gaza", 2);
+      let israel = new Gempa("Israel di Kota Yerusalem", 200);
+      let korea = new Gempa("Korea di Kota Seoul", 8);
+      let taiwan = new Gempa("Taiwan di Kota Taipei", 7);
+      let china = new Gempa("China di Kota Beijing", 6);
+
+      indonesia.dampak();
+      jepang.dampak();
+      rusia.dampak();
+      india.dampak();
+      palestina.dampak();
+      israel.dampak();
+      korea.dampak();
+      taiwan.dampak();
+      china.dampak();
+    </script>
+  </body>
+</html>
