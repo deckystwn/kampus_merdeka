@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- CSS -->
+    <style>
+      .panel {
+        background-color: white;
+        display: none;
+      }
+    </style>
+
+    <title>Nurul FIkri</title>
+  </head>
+  <body>
+    <h1 class="text-center mt-4">Tentang Kami</h1>
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-sm-8 d-grid gap-2 o">
+          <button class="accordion btn btn-outline-secondary">Profile Nurul Fikri Computer</button>
+          <div class="panel border rounded">
+            <div>
+              <div class="text-center mt-2"><img class="img-fluid" src="http://www.nurulfikri.com/wp-content/uploads/2016/08/NF-Computer-6-1.jpg" alt="nf-computer-6-1" width="500px" /></div>
+
+              <p class="m-3 justify">
+                NF COMPUTER adalah bagian dari grup Nurul Fikri yang telah dipercaya oleh masyarakat Indonesia di bidang pendidikan dan peningkatan sumber daya manusia selama lebih dari 24 tahun. Alumni-alumninya telah berkiprah dan diakui
+                kualitas kerja dan integritasnya oleh dunia usaha.
+              </p>
+              <p class="m-3 justify">
+                NF COMPUTER dirintis sejak tahun 1994 dan merupakan sebuah lembaga di bidang pendidikan dan pelatihan IT <i>(Information Technology)</i>. Kami berkomitmen menjadi partner perusahaan Anda dalam mengembangkan kemampuan serta
+                keahlian SDM di bidang IT. Dengan komitmen tersebut, kami mempersiapkan tim pengajar yang professional dan berpengalaman di bidang IT.
+              </p>
+              <p class="m-3 justify">
+                Di <strong>Era Industri 4.0</strong> saat ini, teknologi informasi berkembang sangat cepat, oleh karena itu pengembangan sumber daya manusia di bidang IT menjadi sebuah kebutuhan yang perlu diprioritaskan. NF COMPUTER
+                menjadi jawaban yang tepat atas kebutuhan pengembangan kompetensi IT. Sehingga kami selalu berusaha untuk terus berinovasi terhadap teknologi terbaru.
+              </p>
+            </div>
+          </div>
+          <button class="accordion btn btn-outline-secondary">Visi & Misi</button>
+          <div class="panel border rounded">
+            <div class="m-3 justify">
+              <p>
+                <strong>Visi</strong><br />
+                Menjadi institusi pelatihan yang kompeten dan profesional di bidang pendidikan teknologi informasi dan komunikasi di berbagai wilayah indonesia.
+              </p>
+              <p>
+                <strong>Misi</strong><br />
+                Membangun, memelihara dan mengembangkan institusi pelatihan bisnis berdaya saing tinggi, berkarakter profesional, kompeten, mengedepankan integritas dan tanggung jawab sosial, dengan mengembangkan dan menyediakan produk
+                produk pendidikan dan pelatihan teknologi informasi dan komunikasi prima.
+              </p>
+            </div>
+          </div>
+          <button class="accordion btn btn-outline-secondary">Deskripsi Bisnis</button>
+          <div class="panel border rounded p-2">
+            <p class="m-3 justify">
+              NF COMPUTER menyelenggarakan Pelatihan dan Pendidikan di bidang Teknologi Informasi dan Komunikasi (IT Training) yang dibagi menjadi lima produk. Pelatihan (training) ini dibagi dalam beberapa kategori produk yaitu :
+            </p>
+            <ul class="m-3 justify">
+              <li>Public Class, merupakan short course bidang TIK (Teknologi Informasi dan Komunikasi) yang berbasis Linux maupun Windows.</li>
+              <li>Exclusive Class, merupakan paket training yang diberikan kepada customer dengan durasi 6-8 jam perhari dengan jumlah peserta minimal 2 orang dan pelaksanaan pelatihannya di NF Computer.</li>
+              <li>In House/In Company Training, yaitu pelatihan TIK yang dikustomisasi untuk kebutuhan perusahaan-perusahaan</li>
+            </ul>
+            <p class="m-3 justify">Paket bisnis khusus dibagi ke dalam beberapa kategori produk yang dikelola secara profesional oleh NF COMPUTER yaitu :</p>
+            <ul class="m-3 justify">
+              <li>Kerjasama Pendidikan Sekolah, yaitu Divisi khusus pendidikan sekolah dimana NF COMPUTER bekerjasama dalam hal : Kerjasama pembangunan Lab Komputer, Pengajaran Komputer dan kombinasi antara keduanya.</li>
+              <li>
+                Usulan Produk lain:&nbsp;Produk-produk yang menurut lokasi diminati oleh pasar tapi belum ada dalam daftar produk pelatihan dan pendidikan NF COMPUTER, dapat diajukan oleh cabang untuk menjadi produk yang dipertimbangkan
+                sebagai produk dan akan menjadi bagian dari penyelenggaraan pelatiahan dan pendidikan di cabang tersebut pada periode yang dianggap tepat oleh NF COMPUTER.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- memanggil jquery secara online -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".accordion").on("click", function () {
+          $(this).toggleClass("active");
+          $(this).next().slideToggle("slow");
+        });
+      });
+    </script>
+  </body>
+</html>
